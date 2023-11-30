@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KFC</title>
+  <link rel="icon" href="../Imagenes/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="../css/LibroReclamacion.css" />
+
+</head>
+<body>
+    <div class="logo">
+          <img
+            src="../Imagenes/KFCLIBRO.svg"
+            alt="KFC"
+            width="100"
+            height="100"
+          />
+      </div>
+    <div class="container">
+        <h2 >LIBRO DE RECLAMACIONES</h2>
+        <form>
+            <h3>1. IDENTIFICACIÓN DEL CONSUMIDOR RECLAMANTE</h3>
+            <label for="nombres">Nombre(s):</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo (Gmail o Hotmail):</label>
+            <input type="email" id="correo" name="correo" required pattern="[a-zA-Z0-9._%+-]+@(gmail\.com|hotmail\.com)">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="tipoDocumento">Tipo de Documento:</label>
+            <select id="tipoDocumento" name="tipoDocumento">
+                <option value="DNI">DNI</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Carné de Extranjería">Carné de Extranjería</option>
+            </select>
+
+            <label for="numDocumento">Número de Documento:</label>
+            <input type="text" id="numDocumento" name="numDocumento" required>
+
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento">
+                <option value="--Seleccione--">--Seleccione--</option>
+                <option value="Lima">Lima</option>
+                <option value="Ica">Ica</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Loreto">Loreto</option>
+                <option value="Pasco">Pasco</option>
+            </select>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <h3>2. IDENTIFICACIÓN DEL BIEN CONTRATADO</h3>
+            <label for="tipoBien">Tipo:</label>
+            <select id="tipoBien" name="tipoBien">
+                <option value="Producto">Producto</option>
+                <option value="Servicio">Servicio</option>
+            </select>
+
+            <label for="montoReclamado">Monto Reclamado:</label>
+            <input type="text" id="montoReclamado" name="montoReclamado" required>
+
+            <label for="descripcionMonto">Descripción para monto reclamado:</label>
+            <input type="text" id="descripcionMonto" name="descripcionMonto" maxlength="150">
+
+            <h3>3. DETALLE DE LA RECLAMACIÓN Y PEDIDO DEL CONSUMIDOR</h3>
+            <label for="tipoReclamacion">Reclamación:</label>
+            <select id="tipoReclamacion" name="tipoReclamacion">
+                <option value="Reclamo">Reclamo</option>
+                <option value="Queja">Queja</option>
+            </select>
+
+            <label for="numPedido">Número de Pedido:</label>
+            <input type="text" id="numPedido" name="numPedido">
+
+            <label for="fechaPedido">Fecha de Pedido:</label>
+            <input type="text" id="fechaPedido" name="fechaPedido">
+
+            <label for="detalleReclamacion">Detalle:</label>
+            <textarea id="detalleReclamacion" name="detalleReclamacion" maxlength="4000" required></textarea>
+
+            <label for="pedidoConcreto">Pedido en concreto:</label>
+            <textarea id="pedidoConcreto" name="pedidoConcreto" maxlength="1000"></textarea>
+
+            <input type="submit" value="Enviar reclamación" class="btn">
+        </form>
+    </div>
+
+</body>
+</html>

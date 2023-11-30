@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    background-color: rgb(246, 245, 243);
+  }
+.logo{
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%; 
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #D80000;
+}
+
+label[for="correo"] {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 16px;
+}
+input[type="text"], select {
+    height: 40px; 
+    font-size: 16px; 
+}
