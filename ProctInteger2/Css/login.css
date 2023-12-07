@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/Prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  .container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .message {
+    padding: 1rem;
+  }
+  .message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+  .message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgb(82, 82, 82);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in;
+    color: white;
+  }
+  .message button:hover {
+    background-color: black;
+  }
+  .formulario {
+    width: 400px;
+    height: 600px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(38, 38, 38, 0.707);
+    text-align: center;
+  }
+  .create {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+  }
+  .cuenta-gratis {
+    padding: 2rem 0;
+  }
+  .formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sign-in.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .formulario button {
+    width: 60%;
+    margin: auto;
+    padding: 7px;
+    border-radius: 2rem;
+    background-color: red;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+  }
