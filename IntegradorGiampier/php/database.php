@@ -2,10 +2,10 @@
 
 class Database
 {
-    private $hostname = "localhost";
+    private $hostname = "localhost:3308";
     private $database = "dbsistemakfc";
     private $username = "root";
-    private $password = "ElñPiero7298";
+    private $password = "";
     private $charset = "utf8";
 
     function conectar(){

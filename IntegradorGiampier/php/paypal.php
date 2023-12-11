@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&currency=<?php echo CURRENCY; ?>"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AVGTMpmjBrUiz-n3HsqQmjXANUCjO3u0svFZ-RfVCXRwAxtBdX56nMoF8qv7AtBuhYErdIdqAEqGqAjK&currency=USD"></script>
 </head>
 <body>
     <div id="paypal-button-container"></div>
