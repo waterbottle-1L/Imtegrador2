@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Imagenes/FAVICONFNAF (1).ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <script src="./Js/header.js"></script>
+  <title>Freddy Fazbear's Pizza</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="./Index.html">
+        <img src="./Imagenes/LOGO FNAF.png" alt="KFC" width="150" height="120" />
+      </a>
+    </div>
+    <nav class="nav">
+      <ul class="navlist">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#promos">Promos</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#sobrenosotros">Sobre nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-icon">
+        <a href="#" title="Iniciar sesion"><i class="bx bxs-user-circle"></i>&nbsp;&nbsp;</a>
+        <a href="#"><i class="bx bxs-cart"></i>&nbsp;&nbsp;</a>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <section class="home" id="home">
+      <div class="content">
+        <h2>FREDDY FAZBEAR'S PIZZA</h2>
+        <p>Ven a Freddy Fazbear's y disfruta
+          de nuestras deliciosas pizzas</p>
+          &nbsp&nbsp
+        <a href="#promos" class="btn-1">Promos</a>
+
+      </div>
+    </section>
+    <section class="promos" id="promos">
+      <div class="contenido">
+      <h2> LAS PROMOS MAS POPULARES!! </h2>
+      <br><br>
+      <i class='bx bxs-pizza'></i>
+      </div>
+      <div class="container1">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" 
+          space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+          <swiper-slide>
+            <img src="./Imagenes/PROMO PIZZA.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./Imagenes/PROMO PIZZA 2.png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./Imagenes/Captura de pantalla (684).png" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./Imagenes/1.png">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./Imagenes/2.png">
+          </swiper-slide>
+          
+        </swiper-container>
+      </div>
+    </section>
+    
+    <section class="menu" id="menu">
+      <div class="icono">
+        <i class='bx bx-cheese' ></i>
+        <i class='bx bx-leaf' ></i>
+      </div>
+      <div class="container2">
+        <div class="titleText">
+          <div class="section-tittle">
+            <h2>Nuestro Menu</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu-tabs">
+            <spam class="tab-item active" data-target="Promos" >
+              <img src="./Imagenes/PROMO.svg" alt="">&nbsp&nbsp
+              Promos
+            </spam>
+            <spam class="tab-item" data-target="Pizzas">
+              <img src="./Imagenes/PIZZA.svg" alt="">&nbsp
+              Pizzas
+            </spam>
+            <spam class="tab-item" data-target="Combos">
+              <img src="./Imagenes/COMBOS.svg" alt="">&nbsp&nbsp
+              Combos
+            </spam>
+            <spam class="tab-item" data-target="Complementos">
+              <img src="./Imagenes/COMPLEMENTOS.svg" alt="">&nbsp&nbsp
+              Complementos
+            </spam>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA-HAWAIANA.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza Hawaiana grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/32.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA AMERICANA.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza Americana grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/26.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA MOZARELLA.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza Mozarella grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/26.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA PEPERONI.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza Peperoni grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/30.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA VEGETARIANA.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza Vegetariana grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/28.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA ESPAÑOLA.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza Española grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/28.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/PIZZA TOCINO 6 QUESOS.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Tocino 6 quesos grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/28.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Pizzas">
+            
+            <div class="image">
+              <img src="./Imagenes/ALL THE MEATS.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pizza All the meats</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/28.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Promos">
+            
+            <div class="image">
+              <img src="./Imagenes/ComboLasagna1.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Combo lasagna</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/19.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Promos">
+            
+            <div class="image">
+              <img src="./Imagenes/COMBO FULL.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Combo Full personal</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/16.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Promos">
+            
+            <div class="image">
+              <img src="./Imagenes/DUOPOWER MEDIANO.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Duo Power mediano</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/44.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Promos">
+            
+            <div class="image">
+              <img src="./Imagenes/shaqaroni.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Combo Shaqaroni</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/16.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Combos">
+            
+            <div class="image">
+              <img src="./Imagenes/comboPiza.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Combo Pizza Grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/39.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Combos">
+            
+            <div class="image">
+              <img src="./Imagenes/2pizzas grande.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Combo 2 pizzas grande</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/69.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Combos">
+            
+            <div class="image">
+              <img src="./Imagenes/COMBOFamiliar.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Combo Familiar</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/77.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Complementos">
+            
+            <div class="image">
+              <img src="./Imagenes/CALZONEHAWAIANO.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Calzone Hawaiano</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/16.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Complementos">
+            
+            <div class="image">
+              <img src="./Imagenes/PEPERONI ROLL.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Pepperoni roll x6</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/11.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Complementos">
+            
+            <div class="image">
+              <img src="./Imagenes/ROLLS DE CANELA.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Rolls de canela</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/7.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-category="Complementos">
+            
+            <div class="image">
+              <img src="./Imagenes/CHICKENPOPEPS.webp" alt="">
+            </div>
+            <div class="content1">
+              <h3>Chicken Poppers</h3>
+              <br>
+              <div class="info">
+                <div class="price">s/16.90</div>
+              </div>
+              <div class="icons">
+                <a href="#"><i class='bx bx-cart-add' ></i></a>
+                <a href="#"><i class='bx bx-heart' ></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="contacto" id="contacto">
+      <div class="banner">
+        <img src="./Imagenes/chicapng.png">
+      </div>
+      <div class="container3">
+        <div class="formBox">
+          <div class="row">
+            <h3>Envianos tu comentario</h3>
+            <div class="inputBox">
+              <input type="text" placeholder="Nombre">
+            </div>
+            <div class="inputBox">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+              <textarea name="" id="" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="inputBox">
+              <input type="submit" class="btn-1" value="Enviar">
+            </div>
+          </div>
+        </div>
+        <div class="contactbox">
+          <div class="row">
+            <div class="contactitem">
+              <span>Horario de atencion</span>
+              <p>09:00 - 22:30</p>
+              <p>Lunes a Domingos</p>
+            </div>
+            <div class="contactItem">
+              <span>Nuestros locales</span>
+              <p>Av. Aramburú 855, San Isidro Lima Perú</p>
+              <p>CC. El Quinde Ica - Av. Los Maestros 202, 2do Piso Ica Perú</p>
+              <p>Av. Porongoche 500, Paucarpata</p>
+            </div>
+            <div class="contactItem">
+              <span>Contactanos en:</span>
+              <div class="iconos">
+                <a><i class='bx bxl-facebook-circle'></i></a>
+                <a><i class='bx bxl-instagram' ></i></a>
+                <p> Llamanos a 01 6060000</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="./Js/Slider.js" ></script>
+  <script src="./Js/menu.js"></script>
+
+</body>
+
+</html>

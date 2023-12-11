@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  body{
+    background-color: rgb(41, 41, 47);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+
+  }
+  
+  .sticky{
+    background: #000000bb;
+    padding: 20px;
+  }
+  .logo{
+    float: left;
+    z-index: 100;
+  }
+  .navlist{
+    position: relative;
+    display: flex;
+  }
+  .navlist li{
+    margin: 0 0 0 30px;
+
+  }
+  .navlist a{
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .navlist a:hover{
+    color: rgb(216, 216, 49);
+  }
+  .home{
+    width: 100%;
+    min-height: 85vh;
+    background-image: url(../Imagenes/FREDDY2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items:center;
+    justify-content:right;
+    padding: 0 80px;
+    display: flex;
+  }
+  .nav{
+    display: flex;
+  }
+  .content{
+    text-align: center;
+    z-index: 2;    
+  }
+  .nav-icon{
+    padding: 0 30px;
+    font-size: 22px;
+    align-items: center;
+  }
+  .nav-icon a{
+    color: whitesmoke;
+  }
+  .nav-icon a:hover{
+    color: rgb(248, 224, 44);
+    text-shadow: 0px 0 15px #40f30e ;
+  }
+  .content h2{
+    color: rgb(255, 191, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0 0 30px #d81a1add;
+  }
+  .content p{
+    color:rgb(255, 111, 0);
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .btn-1{
+    font-size: 17px;
+    color: rgb(235, 191, 16);
+    border: 1px solid rgb(70, 253, 4);
+    border-radius: 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: .5s;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 12px;
+    max-width: 100px;
+    background: transparent;
+  }
+  .btn-1:hover{
+    background-color: #40f30e;
+    color: rgb(2, 2, 2);
+  }
+  .promos{
+    min-height: 90vh;
+  }
+  .container1{
+    justify-content: center;
+  }
+  /*slider*/
+  swiper-container {
+    width: 950px;
+    height: 70%;
+    margin-left: 21%;
+  }
+
+  swiper-slide {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 870px;
+    height: 470px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  .contenido{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenido h2{
+    color: rgb(213, 97, 245);
+    font-size: 30px;
+    text-shadow: 0 0 20px #d51ad8dd;
+  }
+  .contenido i{
+    color: rgb(230, 206, 50);
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(223, 22, 22);
+  }
+  .menu{
+    min-height: 100vh;
+    padding: 10px 0 0;
+  }
+  .container2{
+    max-width: 1140px;
+    margin:auto;
+    justify-content: center;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    @include grid(15rem);
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+    justify-items: center;
+    
+  }
+  .menu-tabs{
+    margin-top: 5%;
+    padding: 0 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .tab-item{
+    display: inline-block;
+    margin: 0 5px 10px 5px;
+    cursor: pointer;
+    padding: 6px 20px;
+    border-radius: 30px;
+    color: #40f30e;
+    transition: all .3s ease;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .tab-item img{
+    filter: invert(66%) sepia(84%) saturate(476%) hue-rotate(55deg) brightness(94%) contrast(119%);
+  }
+  .tab-item:hover{
+    color: #f5f5f5;  
+  }
+  .active{
+    border: 1px #40f30e;
+    display: inline-block;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+  
+  @mixin grid($val){
+    display: grid;
+    grid-template-colums: repeat(auto-fit, minmax($val, 1fr));
+  }
+  .section-tittle h2{
+    text-align: center;
+    color: rgb(245, 188, 97);
+    font-size: 30px;
+    text-shadow: 0 0 20px #d85c1add;
+  }
+  .icono{
+    text-align: center;
+  }
+  .icono .bx-cheese{
+    color: rgb(230, 206, 50);
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(223, 22, 22);
+    text-align: center;
+  }
+  .icono .bx-leaf{
+    color: rgb(56, 232, 62);
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(57, 225, 6);
+    text-align: center;
+  }
+  .item{
+    margin-top: 5%;
+    position: relative;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    max-width: 15rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.91);
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+    animation: fadeIn .5s ease;
+  }
+  @keyframes fadeIn{
+    0%{
+      opacity: 0%;
+      transform: translateY(-25px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .icons{
+   align-items: flex-end;
+   justify-content: flex-end;
+   text-align: right; 
+  }
+  .icons:hover{
+    top: 0;
+  }
+  .icons a{
+    font-size: 30px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    color: yellow;
+    margin: 0 10px 10px 0;
+
+  }
+  .icons a:hover{
+    color: #40f30e;
+    text-shadow: 0 0 20px rgb(57, 225, 6);
+  }
+  .image img{
+    width: 100%;
+    height: 30%;
+
+  }
+  .content1 h3{
+    color: rgb(238, 202, 93);
+    font-size: 15px;
+    text-shadow: 0 0 20px rgba(255, 162, 0, 0.968);
+  }
+  .price{
+    color: whitesmoke;
+    text-align: left;
+    padding-left: 30px;
+    font-weight: 700;
+  }
+
+  
+
+
+  
