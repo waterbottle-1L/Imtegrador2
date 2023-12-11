@@ -1,15 +1,18 @@
 <?php  
     require 'config.php';
-    require 'config/database';
+    require 'database.php';
+
+    require 'tablacarrito.php';
     $db = new  Database();
     $con = $db->conectar();
 
-    $json = file_get_contents('php://input');
+    $json = file_get_content('php://input');
     $datos = json_decode($json, true);
 
-    echo  '<pre>';
-    print_r($datos);
-    echo  '<pre>';
+
+
+    
+
 
     if (is_array($datos)) {
         

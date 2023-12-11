@@ -147,14 +147,15 @@ if($productos!=null){
                 });
             },
             onApprove: function(data, actions){
+                  let url = '../php/captura.php'
                 actions.order.capture().then(function(detalles){
                     console.log(detalles)
-                    let url = 'captura.php'
+                    
 
                     return fetch(url, {
                         method: 'post',
                         headers: {
-                            'content-type': 'application/jason'
+                            'content-type': 'application/json'
                         },
                         body: JSON.stringify({
                             detalles: detalles
